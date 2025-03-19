@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <title>Gestão de Acesso</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: Rubik, serif">
+    <!-- Botão de alternância da sidebar -->
+    <button class="btn btn-primary sidebar-toggle" id="toggleSidebar">☰</button>
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="logo">
+        <a href="app.html"> <img src="assets/images/ga-logo-tr.PNG" width="150" alt="" /> </a>
+      </div>
+      <!-- Links Menu -->
+      <ul class="nav">     
+
+        <!-- Sistemas GA -->
+        <li class="nav-item">
+          <button class="dropdown-btn">Sistemas GA ▾</button>
+          <ul class="submenu">
+            <li><a target="_blank" href="https://aad.portal.azure.com/#@yduqs.com.br/dashboard/private/416dee84-51e6-43e5-9be9-a1049db03025">Azure</a></li>
+            <li><a target="_blank" href="https://security.microsoft.com/restrictedentities?tid=29e081cc-983f-4d52-b1d0-103595213bc6">Defender</a></li>
+            <li><a target="_blank" href="https://gestao-acesso-ha.estacio.corp/">IAM</a></li>
+            <li><a target="_blank" href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage">O365</a></li>
+            <li><a target="_blank" href="http://siaadm.estacio.rj.br/">SIA</a></li>
+            <li><a target="_blank" href="http://sisgdi.intranet.br/Colaborador/Index">SISGDI Colaborador</a></li>
+            <li><a target="_blank" href="http://sisgdi.intranet.br/Terceiro/Index">SISGDI Terceiro</a></li>
+            <li><a title="Perfil Resolvedor" target="_blank" href="https://yduqs.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do">SNOW Resolvedor</a></li>
+            <li><a title="Perfil Solicitante" target="_blank" href="https://yduqs.service-now.com/esc">SNOW Solicitante</a></li>
+          </ul>
+        </li>
+
+        <!-- Sistemas CCenter -->
+        <li class="nav-item">
+          <button class="dropdown-btn">Sistemas CCenter ▾</button>
+          <ul class="submenu">
+            <li><a target="_blank" href="https://atilacorrecaoprova.estacio.br/">GED</a></li>
+            <li><a target="_blank" href="https://pergamumcadastro.com.br/pergamumweb/home_geral/login.zul">Pergamum</a></li>
+            <li><a target="_blank" href="https://portal.damasio.com.br/Login.aspx">P360</a></li>
+            <li><a target="_blank" href="https://estacio.projuris.com.br/projuris">Projuris</a></li>
+            <li><a target="_blank" href="http://siga.ebecrj.com.br">Siga</a></li>
+            <li><a target="_blank" href="http://sgc.estacio.br/Login.aspx?ReturnUrl=%2f">SGC</a></li>
+            <li><a target="_blank" href="https://sgd2.lab245.com.br/index_forte.htm">SGD</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <button class="dropdown-btn">Documentos ▾</button>
+          <ul class="submenu">
+            <li><a target="_blank" href="https://estacio-my.sharepoint.com/:x:/g/personal/souza_ariane_yduqs_com_br/EUrsZeh2ghBJrcQnev3OJvoBKa5Mi-WQMwOFyqlpS9LAQA?e=ffbT6g">Calendário Férias</a></li>
+            <li><a target="_blank" href="https://estacio.sharepoint.com/:x:/r/sites/TI_Seguranca_Informacao/_layouts/15/Doc.aspx?sourcedoc=%7B6EF9A19F-B1BE-422B-A971-BE6E87910601%7D&file=Perfis%20SIA.xlsx&action=default&mobileredirect=true">Perfis SIA</a></li>
+            <li><a target="_blank" href="https://estacio.sharepoint.com/sites/TI_Seguranca_Informacao/SitePages/P%C3%A1gina%20Inicial.aspx?FollowSite=1&SiteName=Seguran%C3%A7a%20da%20Informa%C3%A7%C3%A3o">Sharepoint GA</a></li>
+            <li><a target="_blank" href="https://estacio.sharepoint.com/sites/PortaldeDocumentosNormativos?utm_smid=9490159-1-1">SGP Normativos</a></li>
+          </ul>
+        </li>     
+      
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="patterns-message.html"
+            > Mensagens Padrão</a>
+        </li>
+      </ul>
+
+      <!-- Footer do sidebar -->
+      <div id="sidebarFooter" class="text-center p-2">
+        <small>&copy; 2025 Gestão de Identidade e Acesso</small>
+      </div>
+    
+    </nav>
+    <!-- FIM Sidebar -->
+
+    <div id="content">      
+
+    <!-- PARTE DAS MENSAGENS PADRONIZADAS -->    
+      <div id="mensagemSeletor" class="container mt-5">
+        <h1 style="font-family: Rubik, serif" class="text-center">
+          GA – Modelos de <br> Mensagens Padronizadas
+        </h1>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6">
+            <!-- Select Box -->
+            <div class="mb-3">
+              <!-- Botão para copiar mensagem -->
+              <button id="copyButton" class="btn btn-primary">
+                Copiar Mensagem
+              </button>
+              <!-- Feedback para o usuário -->
+              <p id="copyFeedback" class="mt-2 text-success" style="display: none">
+                Mensagem copiada com sucesso!
+              </p>
+              <br/><br/>
+
+              <label for="messageSelector" class="form-label"
+                >Escolha uma opção:</label
+              >
+              <select id="messageSelector" class="form-select">
+                <option value="" selected disabled>
+                  Selecione uma opção...
+                </option>
+
+                <optgroup label="Cancelamentos">
+                  <option value="cancelamento mfa">MFA</option>
+                  <option value="cancelamento adp">ADP</option>
+                  <option value="cancelamento reset de senha">
+                    Reset de senha
+                  </option>
+                  <option value="cancelamento bloqueio/desbloqueio de usuários">
+                    Bloqueio/Desbloqueio de Usuários
+                  </option>
+                  <option
+                    value="cancelamento bloqueio/desbloqueio de usuários - licença"
+                  >
+                    Bloqueio/Desbloqueio de Usuários - Lincença
+                  </option>
+                  <option value="cancelamento a pedido do solicitante">
+                    A pedido do Solicitante
+                  </option>
+                </optgroup>
+
+                <optgroup label="Mensagens Básicas">
+                  <option value="andamento">Trabalho em andamento</option>
+                  <option value="transferencia">Transferir incidente</option>
+                  <option value="chamado finalizado">Chamado Finalizado</option>
+                </optgroup>
+
+                <optgroup label="Sales Force">
+                  <option value="acesso-colaborador">Acesso Colaborador</option>
+                  <option value="acesso-polo">Acesso Polo</option>
+                </optgroup>
+
+                <optgroup label="SIA">
+                  <option value="acesso-sia">Acesso SIA</option>
+                  <option value="reset-sia">Reset de senha</option>
+                  <option value="desbloqueio-revisão">
+                    Desbloqueio por revisão de Acessos
+                  </option>
+                </optgroup>
+
+                <optgroup label="Microsoft">
+                  <option value="licença aplicada">Licença aplicada</option>
+                  <option value="configuração vpn">Configuração de VPN</option>
+                  <option value="vpn liberada">VPN Liberada</option>
+                  <option value="cancelamento de mfa">
+                    Solicitação de cancelamento de MFA
+                  </option>
+                  <option value="mfa sms aplicativo">
+                    MFA - Somente por SMS ou Aplicativo
+                  </option>
+                  <option value="atualização de cargo">
+                    Fechamento para Atualização de Cargo no AD
+                  </option>
+                  <option value="licença não aplicada">
+                    Licença A3 não Aplicada
+                  </option>
+                </optgroup>
+
+                <optgroup label="AD">
+                  <option value="desbloqueio desligado">
+                    Desbloqueio de Conta de Colaborador Desligado
+                  </option>
+                </optgroup>
+
+                <optgroup label="Suporte Field">
+                  <option value="tarefas ou incidentes">
+                    Criar Tarefas ou Transferir Incidentes
+                  </option>
+                  <option value="suporte a equipamentos">
+                    Suporte a Desktop ou Notebook
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <!-- Textarea -->
+            <div class="mb-3">
+              <label for="messageTextarea" class="form-label">Mensagem:</label>
+              <textarea
+                id="messageTextarea"
+                class="form-control"
+                rows="5"
+                readonly
+              ></textarea>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sidebarAnima.js"></script>
+    <!-- Responsável pela animação -->
+    <script src="assets/js/mensagens.js"></script>
+    <!-- Responsável pela lógica do seletor de mensagens -->
+  </body>
+</html>
