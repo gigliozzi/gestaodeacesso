@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon-32x32.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <title>Gestão de Acesso</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: Rubik, serif">
+    <!-- Botão de alternância da sidebar -->
+    <button class="btn btn-primary sidebar-toggle" id="toggleSidebar">☰</button>
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="logo">
+        <a href="app.html"><img src="assets/images/logo-ga-T1.png" width="150" alt="" /> </a>
+      </div>
+      <!-- Links Menu -->
+      <ul class="nav">     
+
+        <!-- Sistemas GA -->
+        <li class="nav-item">
+          <button class="dropdown-btn">Sistemas GA ▾</button>
+          <ul class="submenu">
+            <li><a target="_blank" href="https://aad.portal.azure.com/#@yduqs.com.br/dashboard/private/416dee84-51e6-43e5-9be9-a1049db03025">Azure</a></li>
+            <li><a target="_blank" href="https://security.microsoft.com/restrictedentities?tid=29e081cc-983f-4d52-b1d0-103595213bc6">Defender</a></li>
+            <li><a target="_blank" href="https://gestao-acesso-ha.estacio.corp/">IAM</a></li>
+            <li><a target="_blank" href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage">O365</a></li>
+            <li><a target="_blank" href="http://siaadm.estacio.rj.br/">SIA</a></li>
+            <li><a target="_blank" href="http://sisgdi.intranet.br/Colaborador/Index">SISGDI Colaborador</a></li>
+            <li><a target="_blank" href="http://sisgdi.intranet.br/Terceiro/Index">SISGDI Terceiro</a></li>
+            <li><a title="Perfil Resolvedor" target="_blank" href="https://yduqs.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do">SNOW Resolvedor</a></li>
+            <li><a title="Perfil Solicitante" target="_blank" href="https://yduqs.service-now.com/esc">SNOW Solicitante</a></li>
+          </ul>
+        </li>
+
+        <!-- Sistemas CCenter -->
+        <li class="nav-item">
+          <button class="dropdown-btn">Sistemas CCenter ▾</button>
+          <ul class="submenu">
+            <li><a target="_blank" href="https://atilacorrecaoprova.estacio.br/">GED</a></li>
+            <li><a target="_blank" href="https://pergamumcadastro.com.br/pergamumweb/home_geral/login.zul">Pergamum</a></li>
+            <li><a target="_blank" href="https://portal.damasio.com.br/Login.aspx">P360</a></li>
+            <li><a target="_blank" href="https://estacio.projuris.com.br/projuris">Projuris</a></li>
+            <li><a target="_blank" href="http://siga.ebecrj.com.br">Siga</a></li>
+            <li><a target="_blank" href="http://sgc.estacio.br/Login.aspx?ReturnUrl=%2f">SGC</a></li>
+            <li><a target="_blank" href="https://sgd2.lab245.com.br/index_forte.htm">SGD</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <button class="dropdown-btn">Documentos ▾</button>
+          <ul class="submenu">
+            <li><a target="_blank" href="https://estacio-my.sharepoint.com/:x:/g/personal/souza_ariane_yduqs_com_br/EUrsZeh2ghBJrcQnev3OJvoBKa5Mi-WQMwOFyqlpS9LAQA?e=ffbT6g">Calendário Férias</a></li>
+            <li><a target="_blank" href="https://estacio.sharepoint.com/:x:/r/sites/TI_Seguranca_Informacao/_layouts/15/Doc.aspx?sourcedoc=%7B6EF9A19F-B1BE-422B-A971-BE6E87910601%7D&file=Perfis%20SIA.xlsx&action=default&mobileredirect=true">Perfis SIA</a></li>
+            <li><a target="_blank" href="https://estacio.sharepoint.com/sites/TI_Seguranca_Informacao/SitePages/P%C3%A1gina%20Inicial.aspx?FollowSite=1&SiteName=Seguran%C3%A7a%20da%20Informa%C3%A7%C3%A3o">Sharepoint GA</a></li>
+            <li><a target="_blank" href="https://estacio.sharepoint.com/sites/PortaldeDocumentosNormativos?utm_smid=9490159-1-1">SGP Normativos</a></li>
+          </ul>
+        </li>     
+      
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="patterns-message.html"
+            > Mensagens Padrão</a>
+        </li>
+      </ul>
+
+      <!-- Footer do sidebar -->
+      <div id="sidebarFooter" class="text-center p-2">
+        <small>&copy; 2025 Gestão de Identidade e Acesso</small>
+      </div>
+    
+    </nav>
+    <!-- FIM Sidebar -->
+    
+    <div id="content">
+
+    <!-- PARTE DOS CARDS -->
+    <div class="container mt-4">
+
+      <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/iam.jfif" class="card-img-top" alt="IAM">
+            <div class="card-body">""
+              <!-- <h5 class="card-title">Gestão de Acessos</h5> -->
+              <p class="card-text">Gerencie os acessos de usuários de forma segura e eficiente.</p>
+              <a href="https://gestao-acesso-ha.estacio.corp/" target="_blank" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/servicenow.png" class="card-img-top" alt="ServiceNow">
+            <div class="card-body">
+              <!-- <h5 class="card-title">ServiceNow</h5> -->
+              <p class="card-text">Acompanhe e gerencie solicitações e incidentes.</p>
+              <a href="https://yduqs.service-now.com/now" target="_blank" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Microsoft-Office-365-Logo.png" class="card-img-top">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Microsoft 365</h5> -->
+              <p class="card-text">Gerencie licenças, segurança e acessos à plataforma Microsoft.</p>
+              <a href="https://admin.microsoft.com/" target="_blank" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/cube-menor.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">SIA</h5>
+              <p class="card-text">Gerencie licenças, segurança e acessos à plataforma Microsoft.</p>
+              <a href="http://siaadm.estacio.rj.br/" target="_blank" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/estacio-logo.jpg" class="card-img-top" alt="Microsoft">
+            <div class="card-body">
+              <h5 class="card-title">SISGDI</h5>
+              <p class="card-text">Gerencie licenças, segurança e acessos à plataforma Microsoft.</p>
+              <a href="http://sisgdi.intranet.br/Home/Index" target="_blank" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/Senhasegura.webp" class="card-img-top" alt="Microsoft">
+            <div class="card-body">
+              <h5 class="card-title">COFRE</h5>
+              <p class="card-text">Acesso remoto sem VPN e com nível de acesso detalhado</p>
+              <a href="https://cofredesenha.estacio.corp/" target="_blank" class="btn btn-primary">Acessar</a>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- FIM DA DIV ROW DOS CARDS -->
+
+    </div>  <!-- FIM DA DIV CONTAINER DOS CARDS -->
+    <!-- FIM PARTE DOS CARDS -->
+
+    <!-- PARTE DAS MENSAGENS PADRONIZADAS --> 
+    <!-- FIM PARTE DAS MENSAGENS PADRONIZADAS -->
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sidebarAnima.js"></script>
+    <!-- Responsável pela animação -->
+    <script src="assets/js/mensagens.js"></script>
+    <!-- Responsável pela lógica do seletor de mensagens -->
+  </body>
+</html>
